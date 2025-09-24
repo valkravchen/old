@@ -11,18 +11,18 @@ import java.util.Set;
 import java.util.UUID;
 
 public abstract class MediaContent {
-    private final String id;
-    private String title;
-    private String originalTitle;
-    private int year;
-    private String description;
-    private Set<Genre> genres;
-    private ContentRating rating;
-    private LocalDate dateAdded;
-    private LocalDate dateWatched;
-    private boolean completed;
-    private Set<String> tags;
-    private MediaType type;
+    private final String id;           // уникальный идентификатор (UUID)
+    private String title;               // название
+    private String originalTitle;       // оригинальное название
+    private int year;                   // год выпуска/публикации
+    private String description;         // описание
+    private Set<Genre> genres;          // жанры (используем HashSet)
+    private ContentRating rating;       // личный рейтинг
+    private LocalDate dateAdded;        // дата добавления в каталог
+    private LocalDate dateWatched;      // дата просмотра/прочтения
+    private boolean completed;          // завершено ли
+    private Set<String> tags;           // теги (HashSet)
+    private MediaType type;            // тип контента
 
     public MediaContent(String title, int year, MediaType type) {
         this.id = UUID.randomUUID().toString();

@@ -41,7 +41,7 @@ public abstract class MediaContent {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof MediaContent)) return false;
         MediaContent that = (MediaContent) o;
         return year == that.year &&
                 Objects.equals(title, that.title) &&
@@ -175,7 +175,7 @@ public abstract class MediaContent {
     }
 
     public void addTag(String tag) {
-        if (tag != null && tag.trim().isEmpty()) {
+        if (tag != null && !tag.trim().isEmpty()) {
             tags.add(tag);
         }
     }

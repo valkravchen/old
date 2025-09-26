@@ -5,7 +5,6 @@ import com.deepdive.model.MediaContent;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class MediaCatalog {
     private List<MediaContent> catalog;     // основное хранилище (ArrayList)
     private int totalItems;

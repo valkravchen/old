@@ -181,6 +181,6 @@ public abstract class MediaContent {
     }
 
     public void removeTag(String tag) {
-        tags.remove(tag);
+        tags.remove(tag.trim().toLowerCase());
     }
 }

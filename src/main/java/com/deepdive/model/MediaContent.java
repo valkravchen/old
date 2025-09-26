@@ -176,7 +176,7 @@ public abstract class MediaContent {
 
     public void addTag(String tag) {
         if (tag != null && !tag.trim().isEmpty()) {
-            tags.add(tag);
+            tags.add(tag.toLowerCase());
         }
     }
 

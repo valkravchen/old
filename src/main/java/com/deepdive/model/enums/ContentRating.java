@@ -1,6 +1,7 @@
 package com.deepdive.model.enums;
 
 public enum ContentRating {
+
     MUST_WATCH(5, "Обязательно к просмотру"),
     EXCELLENT(4, "Отличный контент"),
     GOOD(3, "Хороший контент"),

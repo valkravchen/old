@@ -5,7 +5,6 @@ public enum ContentRating {
     EXCELLENT(4, "Отличный контент"),
     GOOD(3, "Хороший контент"),
     AVERAGE(2, "Средний контент"),
-
     POOR(1, "Слабый контент");
 
     private final int stars;
